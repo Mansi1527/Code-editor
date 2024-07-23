@@ -4,7 +4,7 @@ import DataProvider from './context/DataProvider';
 import './index.css';
 function App() {
   return (
-    <DataProvider>
+    <DataProvider >
       <Home/>
     </DataProvider>
   );

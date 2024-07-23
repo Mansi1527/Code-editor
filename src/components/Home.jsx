@@ -4,7 +4,7 @@ import Code from './code'
 import Result from './Result'
 const Home = () => {
   return (
-    <div>
+    <div className="max-w-fit">
       <Header/>
       <Code/>
       <Result/>

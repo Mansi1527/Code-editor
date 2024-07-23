@@ -16,7 +16,7 @@ const Editor = ({ Heading, icon, color, value, onchange }) => {
   };
 
   return (
-    <div className={`flex ${open ? 'flex-1' : 'flex-shrink-0'} basis-0 flex-col mr-5`}>
+    <div className={`flex ${open ? 'flex-1' : 'flex-shrink-0'} basis-0 flex-col mr-5 overflow-hidden`}>
       <div className='flex justify-between bg-[#060606]'>
         <div className='flex bg-[#1d1e22] py-3 px-2 text-white'>
           <div className={`bg-[${color}] h-5 w-5 flex justify-center items-center rounded-md mr-5 pb-2`}>
