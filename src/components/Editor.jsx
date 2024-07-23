@@ -25,20 +25,23 @@ const Editor = ({ Heading, icon, color, value, onchange }) => {
           {Heading}
         </div>
         <CloseFullscreenIcon 
-        fontSize='small'
+          fontSize='small'
           className='text-white cursor-pointer'
           onClick={() => setOpen(prevState => !prevState)}
         />
       </div>
-      <ControlledEditor 
-        className='controlled-editor'
-        value={value}
-        onBeforeChange={handleChange}
-        options={{
-          theme: 'material',
-          lineNumbers: true
-        }}
-      />
+      <div className='flex-1 overflow-auto'>
+        <ControlledEditor 
+          className='controlled-editor'
+          value={value}
+          onBeforeChange={handleChange}
+          options={{
+            theme: 'material',
+            lineNumbers: true,
+            scrollbarStyle: "null" // Disable native scrollbars
+          }}
+        />
+      </div>
     </div>
   );
 };
